@@ -11,8 +11,14 @@ public class MainApplication {
         Scanner scanner = new
                 Scanner(System.in);
         boolean exit = false;
-        double currentValue = 0.0;
+
+
+
+
+
         while (!exit) {
+            System.out.println("Please enter the first number.");
+            double currentValue =  scanner.nextDouble();
             System.out.println("Select an option:");
                 System.out.println("Current value: ");
                 System.out.println("1. Addition");
@@ -24,6 +30,10 @@ public class MainApplication {
                 System.out.println("7. Tangent");
                 System.out.println("8. Clear Display");
                 System.out.println("9. Change number on Display");
+                System.out.println("10. Square");
+                System.out.println("11. Square Root");
+                System.out.println("12. Log");
+                System.out.println("13. Natrual Log");
                 System.out.println("0. Exit");
 
                 int choice =scanner.nextInt();
@@ -109,11 +119,32 @@ public class MainApplication {
                         currentValue = scanner.nextDouble();
                         System.out.println("New number displayed: " + currentValue);
                         break;
+                    case 10:
+                       // currentValue = scanner.nextDouble();
+                        System.out.println(currentValue * currentValue);
+                        break;
+                    case 11:
+                    //    currentValue = scanner.nextDouble();
+                        System.out.println(Math.sqrt(currentValue));
+                        break;
+                    case 12:
+                        System.out.println(Math.log10(currentValue));
+                        break;
+                    case 13:
+                        System.out.println(Math.log(currentValue));
+                        break;
 
                     case 0:
                         exit = true;
                         break;
                 }
         }
+
+
     }
-}
+
+
+
+    }
+
+
