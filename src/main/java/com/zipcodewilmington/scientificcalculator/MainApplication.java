@@ -33,7 +33,7 @@ public class MainApplication {
                 System.out.println("10. Square");
                 System.out.println("11. Square Root");
                 System.out.println("12. Log");
-                System.out.println("13. Natrual Log");
+                System.out.println("13. Natural Log");
                 System.out.println("0. Exit");
 
                 int choice =scanner.nextInt();
