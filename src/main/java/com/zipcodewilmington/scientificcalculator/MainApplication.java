@@ -32,7 +32,8 @@ public class MainApplication {
                 System.out.println("9. Change number on Display");
                 System.out.println("10. Square");
                 System.out.println("11. Square Root");
-                System.out.println("12. Natrual Log");
+                System.out.println("12. Log");
+                System.out.println("13. Natrual Log");
                 System.out.println("0. Exit");
 
                 int choice =scanner.nextInt();
@@ -127,7 +128,11 @@ public class MainApplication {
                         System.out.println(Math.sqrt(currentValue));
                         break;
                     case 12:
+                        System.out.println(Math.log10(currentValue));
+                        break;
+                    case 13:
                         System.out.println(Math.log(currentValue));
+                        break;
 
                     case 0:
                         exit = true;
