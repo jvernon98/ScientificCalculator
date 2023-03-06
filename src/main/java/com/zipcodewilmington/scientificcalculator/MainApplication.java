@@ -20,7 +20,7 @@ public class MainApplication {
             System.out.println("Please enter the first number.");
             double currentValue =  scanner.nextDouble();
             System.out.println("Select an option:");
-                System.out.println("Current value: ");
+                System.out.println("Current value:" + currentValue);
                 System.out.println("1. Addition");
                 System.out.println("2. Subtraction");
                 System.out.println("3. Multiplication");
